@@ -2,7 +2,15 @@
 
 A full-stack e-commerce platform built with Spring Boot and React, featuring comprehensive product management, user authentication, shopping cart functionality, and secure checkout processes.
 
-## Features
+## 📸 Application Preview (Screenshots)
+
+*(Add 2-4 screenshots of your web application here. Upload them to your repository, perhaps in a `screenshots/` or `docs/images/` folder, and link them using markdown: `![Screenshot Alt Text](path/to/your-image.png)`)*
+
+*   ![Homepage Preview](screenshots/homepage.png) <!-- Example, replace with your actual image -->
+*   ![Product Page Preview](screenshots/product_page.png) <!-- Example, replace with your actual image -->
+*   ![Shopping Cart Preview](screenshots/cart.png) <!-- Example, replace with your actual image -->
+
+## ✨ Features
 
 - User authentication and authorization with JWT
 - Product catalog with search and filtering
@@ -12,7 +20,7 @@ A full-stack e-commerce platform built with Spring Boot and React, featuring com
 - Admin dashboard
 - Responsive design
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ### Backend
 - Java 17
@@ -34,35 +42,31 @@ A full-stack e-commerce platform built with Spring Boot and React, featuring com
 - GitHub Actions
 - AWS (deployment)
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 - Java 17+
 - Node.js 18+
-- Docker
-- PostgreSQL
+- Docker (Recommended for easiest setup)
+- PostgreSQL (if not using Docker)
 
 ### Backend Setup
-1. Navigate to the `backend` directory
-2. Run `./mvnw spring-boot:run`
-3. Backend will start on `http://localhost:8080`
+1.  Navigate to the `backend` directory.
+2.  (If not using Docker) Ensure PostgreSQL is running and accessible. You may need to configure database connection details in `src/main/resources/application.properties`.
+3.  Run `./mvnw spring-boot:run` (or `mvn spring-boot:run` on Windows if mvnw script isn't set up for cmd).
+4.  Backend will start on `http://localhost:8080`.
 
 ### Frontend Setup
-1. Navigate to the `frontend` directory
-2. Run `npm install`
-3. Run `npm start`
-4. Frontend will start on `http://localhost:3000`
+1.  Navigate to the `frontend` directory.
+2.  Run `npm install`.
+3.  Run `npm start`.
+4.  Frontend will start on `http://localhost:3000`.
 
-### Docker Setup
-```bash
-docker-compose up
-```
-
-## API Documentation
-API documentation is available at `http://localhost:8080/swagger-ui.html` when running the backend.
-
-## Contributing
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Docker Setup (Recommended)
+1.  Ensure Docker Desktop is running.
+2.  From the project root directory:
+    ```bash
+    docker-compose build # (Optional, if you've made changes to Dockerfiles)
+    docker-compose up
+    ```
+    This will build and start both the backend and frontend services, along with a PostgreSQL database instance.
