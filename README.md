@@ -4,7 +4,6 @@ A full-stack e-commerce platform built with Spring Boot and React, featuring com
 
 ## 📸 Application Preview (Screenshots)
 
-*(Add 2-4 screenshots of your web application here. Upload them to your repository, perhaps in a `screenshots/` or `docs/images/` folder, and link them using markdown: `![Screenshot Alt Text](path/to/your-image.png)`)*
 
 *   ![Homepage Preview](screenshots/homepage.png) <!-- Example, replace with your actual image -->
 *   ![Product Page Preview](screenshots/product_page.png) <!-- Example, replace with your actual image -->
